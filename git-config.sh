@@ -19,8 +19,8 @@ generate_ssh_key() {
 
 while [[ $1 = -?* ]]; do
     case $1 in
-        -u|--username) shift; username=${1} ;;
-        -e|--email) shift; email=${1} ;;
+        -u|--username) shift; username=$1 ;;
+        -e|--email) shift; email=$1 ;;
         *) exit ;;
   esac
   shift
@@ -36,5 +36,6 @@ if [[ $email == "" ]]; then
     exit
 fi
 
+echo "New username $username, email $email"
 global_git_config
 generate_ssh_key
