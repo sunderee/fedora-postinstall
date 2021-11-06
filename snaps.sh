@@ -7,8 +7,7 @@ sudo snap install postman
 sudo snap install discord
 sudo snap install spotify
 
-# Tools: Bitwarden, Slack, Mailspring, Typora
+# Tools: Bitwarden, Slack, Mailspring
 sudo snap install bitwarden
 sudo snap install slack --classic
 sudo snap install mailspring
-sudo snap install typora

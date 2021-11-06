@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
 sudo dnf upgrade
 
+# Configure RPM Fusion
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
+sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+
 # Install snap
 sudo dnf install snapd -y
 sudo ln -s /var/lib/snapd/snap /snap
 
-# Install Flat Remix theme
-sudo dnf copr enable daniruiz/flat-remix -y
-sudo dnf install flat-remix-gnome flat-remix-icon-theme flat-remix-gnome gnome-tweaks -y
+# Install Gnome Tweaks & Flat Remix theme
+sudo dnf install gnome-tweaks
+sudo dnf install flat-remix-theme
 
 # Install Node.JS and NPM
 sudo npm install nodejs -y
