@@ -13,6 +13,9 @@ sudo ln -s /var/lib/snapd/snap /snap
 sudo dnf install gnome-tweaks
 sudo dnf install flat-remix-theme
 
+# Install C/C++ related tools
+sudo dnf install gcc gcc-c++ clang autoconf automake cmake csbuild -y
+
 # Install Node.JS and NPM
 sudo npm install nodejs -y
 
