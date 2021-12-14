@@ -17,7 +17,7 @@ sudo dnf install flat-remix-theme
 sudo dnf install gcc gcc-c++ clang autoconf automake cmake csbuild -y
 
 # Install Node.JS and NPM
-sudo npm install nodejs -y
+sudo dnf install nodejs -y
 
 # Install VS Code
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
